@@ -29,8 +29,22 @@
   <!-- Template Main CSS File -->
   <link href="./assets/css/style.css" rel="stylesheet">
   <style>
-  
-  
+	/* [1] The container */
+	.img-hover-zoom {
+	  height: 300px; /* [1.1] Set it as per your need */
+	  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+	}
+
+	/* [2] Transition property for smooth transformation of images */
+	.img-hover-zoom img {
+	  transition: transform .5s ease;
+	}
+
+	/* [3] Finally, transforming the image when container gets hovered */
+	.img-hover-zoom:hover img {
+	  transform: scale(1.5);
+	}
+		
   </style
 <!-- Channel Plugin Scripts -->
 	<script>
@@ -903,7 +917,7 @@
 	</footer><!-- End Footer -->
 
   <!--<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>-->
-  <div id="preloader"></div>
+  <!--<div id="preloader"></div>-->
 
   <!-- Vendor JS Files -->
   <script src="./assets/vendor/jquery/jquery.min.js"></script>
